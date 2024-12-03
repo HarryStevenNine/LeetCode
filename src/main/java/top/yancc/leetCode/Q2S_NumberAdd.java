@@ -29,7 +29,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
  * 题目数据保证列表表示的数字不含前导零
  *
  */
-public class S2_NumberAdd {
+public class Q2S_NumberAdd {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummyHead = new ListNode(0);
@@ -74,7 +74,7 @@ public class S2_NumberAdd {
 
     @Test
     public void testAddTwoNumbers() {
-        S2_NumberAdd solution = new S2_NumberAdd();
+        Q2S_NumberAdd solution = new Q2S_NumberAdd();
 
         ListNode l1 = createList(new int[]{2, 4, 3});
         ListNode l2 = createList(new int[]{5, 6, 4});

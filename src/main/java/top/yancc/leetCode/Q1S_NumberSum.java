@@ -30,7 +30,7 @@ import java.util.Map;
  * -109 <= target <= 109
  * 只会存在一个有效答案
  */
-public class S1_NumberSum {
+public class Q1S_NumberSum {
 
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
@@ -47,7 +47,7 @@ public class S1_NumberSum {
 
     @Test
     public void testTwoSum() {
-        S1_NumberSum solution = new S1_NumberSum();
+        Q1S_NumberSum solution = new Q1S_NumberSum();
 
         assertArrayEquals(new int[]{0, 1}, solution.twoSum(new int[]{2, 7, 11, 15}, 9));
         assertArrayEquals(new int[]{1, 2}, solution.twoSum(new int[]{3, 2, 4}, 6));
@@ -56,7 +56,7 @@ public class S1_NumberSum {
 
     @Test
     public void testTwoSumNoSolution() {
-        S1_NumberSum solution = new S1_NumberSum();
+        Q1S_NumberSum solution = new Q1S_NumberSum();
 
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             solution.twoSum(new int[]{1, 2, 3}, 7);
